@@ -3,8 +3,6 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const { Users } = require("../models/user");
 const _ = require("lodash");
-const jwt = require("jsonwebtoken");
-const config = require("config");
 
 const router = express.Router();
 
@@ -18,7 +16,6 @@ router.post("/", async (req, res) => {
   if (!auth) return res.status(400).send("Invalid username or password");
 
   let valid = await bcrypt.compare(req.body.password, auth.password);
-  console.log("valid", valid, auth.password);
 
   if (!valid) return res.status(400).send("Invalid username or password");
 
