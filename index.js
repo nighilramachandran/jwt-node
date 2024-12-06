@@ -1,4 +1,5 @@
 require("express-async-errors");
+const winston = require("winston");
 const mongoose = require("mongoose");
 const express = require("express");
 const userRoute = require("./routes/user");
@@ -26,6 +27,8 @@ mongoose
   .connect("mongodb://localhost:27017/vidly")
   .then(() => console.log("Connected to db.."))
   .catch((e) => console.log("error", e));
+
+winston.add(new winston.transports.File({ filename: "error.log" }));
 
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);

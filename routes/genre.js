@@ -16,12 +16,9 @@ const Genre = mongoose.model(
 );
 
 router.get("/", async (req, res) => {
-  try {
-    const result = await Genre.find();
-    res.status(200).send(result);
-  } catch (err) {
-    console.log(err);
-  }
+  // throw new Error("could not load genre");
+  const result = await Genre.find();
+  res.status(200).send(result);
 });
 router.get("/:id", (req, res) => {
   // let result = courses.find((c) => c.id === parseInt(req.params.id));
