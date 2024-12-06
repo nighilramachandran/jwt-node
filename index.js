@@ -6,6 +6,7 @@ const genreRoute = require("./routes/genre");
 const config = require("config");
 const helmet = require("helmet");
 const morgan = require("morgan");
+const error = require("./middleware/error");
 
 const app = express();
 app.use(express.json());
@@ -28,4 +29,7 @@ mongoose
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/course", genreRoute);
+// this should the last one amoung the middleware
+app.use(error);
+
 app.listen(3000, () => console.log("listing on port 3000..."));
