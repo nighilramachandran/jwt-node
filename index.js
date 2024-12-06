@@ -1,5 +1,6 @@
 require("express-async-errors");
 const winston = require("winston");
+require("winston-mongodb");
 const mongoose = require("mongoose");
 const express = require("express");
 const userRoute = require("./routes/user");
@@ -29,6 +30,14 @@ mongoose
   .catch((e) => console.log("error", e));
 
 winston.add(new winston.transports.File({ filename: "error.log" }));
+
+winston.add(
+  new winston.transports.MongoDB({
+    db: "mongodb://localhost:27017/vidly", // MongoDB connection string
+    collection: "log", // Optional: collection name
+    options: { useUnifiedTopology: true }, // Required for modern MongoDB
+  })
+);
 
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
