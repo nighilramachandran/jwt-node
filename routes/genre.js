@@ -2,6 +2,7 @@ const Joi = require("joi");
 const express = require("express");
 const mongoose = require("mongoose");
 const authToken = require("../middleware/auth");
+const isAdmin = require("../middleware/admin");
 
 const router = express.Router();
 
@@ -45,7 +46,7 @@ router.post("/", authToken, async (req, res) => {
   res.status(200).send(course);
 });
 
-router.delete("/", authToken, async (req, res) => {
+router.delete("/", [authToken, isAdmin], async (req, res) => {
   const genre = await Genre.findByIdAndDelete(req.body.id);
 
   if (!genre)
