@@ -29,8 +29,13 @@ mongoose
   .then(() => console.log("Connected to db.."))
   .catch((e) => console.log("error", e));
 
-winston.add(new winston.transports.File({ filename: "error.log" }));
+// throw new Error("Uncaught error");
+process.on("uncaughtException", (ex) => {
+  console.log("we got an uncaught error");
+  winston.error(ex.message, ex);
+});
 
+winston.add(new winston.transports.File({ filename: "error.log" }));
 winston.add(
   new winston.transports.MongoDB({
     db: "mongodb://localhost:27017/vidly", // MongoDB connection string
