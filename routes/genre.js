@@ -45,4 +45,13 @@ router.post("/", authToken, async (req, res) => {
   res.status(200).send(course);
 });
 
+router.delete("/", authToken, async (req, res) => {
+  const genre = await Genre.findByIdAndDelete(req.body.id);
+
+  if (!genre)
+    return res.status(404).send("Course with the given id is not found");
+
+  res.status(200).send(genre);
+});
+
 module.exports = router;
