@@ -1,6 +1,7 @@
 const Joi = require("joi");
 const express = require("express");
 const mongoose = require("mongoose");
+const authToken = require("../middleware/auth");
 
 const router = express.Router();
 
@@ -26,7 +27,7 @@ router.get("/:id", (req, res) => {
   // res.status(200).send(result);
 });
 
-router.post("/", async (req, res) => {
+router.post("/", authToken, async (req, res) => {
   const schema = {
     item: Joi.string().min(3).required(),
     price: Joi.number().required(),
