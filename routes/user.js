@@ -8,28 +8,25 @@ const asyncMiddleware = require("../middleware/async");
 
 const router = express.Router();
 
-router.post(
-  "/",
-  asyncMiddleware(async (req, res) => {
-    const { error } = validate(req.body);
+router.post("/", async (req, res) => {
+  const { error } = validate(req.body);
 
-    if (error) {
-      return res.status(400).send(error.details[0].message);
-    }
+  if (error) {
+    return res.status(400).send(error.details[0].message);
+  }
 
-    // let user = Users.findOne({ email: req.body.email });
+  // let user = Users.findOne({ email: req.body.email });
 
-    // if (user) return res.status(400).send("User already registerd");
+  // if (user) return res.status(400).send("User already registerd");
 
-    let user = new Users(_.pick(req.body, ["name", "email", "password"]));
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(user.password, salt);
-    await user.save();
-    const validUser = _.pick(user, ["_id", "name", "email"]);
-    const token = user.getAuthenticationToken();
+  let user = new Users(_.pick(req.body, ["name", "email", "password"]));
+  const salt = await bcrypt.genSalt(10);
+  user.password = await bcrypt.hash(user.password, salt);
+  await user.save();
+  const validUser = _.pick(user, ["_id", "name", "email"]);
+  const token = user.getAuthenticationToken();
 
-    res.header("x-auth-token", token).status(200).send(validUser);
-  })
-);
+  res.header("x-auth-token", token).status(200).send(validUser);
+});
 
 module.exports = router;

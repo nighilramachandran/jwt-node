@@ -1,3 +1,4 @@
+require("express-async-errors");
 const mongoose = require("mongoose");
 const express = require("express");
 const userRoute = require("./routes/user");
