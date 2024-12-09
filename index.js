@@ -1,12 +1,15 @@
 require("express-async-errors");
 const winston = require("winston");
 require("winston-mongodb");
-const mongoose = require("mongoose");
+
 const express = require("express");
 const config = require("config");
 
 const app = express();
+// Routes
 require("./startup/routes")(app);
+// DB
+require("./startup/db")();
 
 if (!config.get("jwtPrivateKey")) {
   console.log("FATAL ERROR : Jwt token not defined");
@@ -14,11 +17,6 @@ if (!config.get("jwtPrivateKey")) {
   // 1: anything other that 0 failure
   process.exit(1);
 }
-
-mongoose
-  .connect("mongodb://localhost:27017/vidly")
-  .then(() => console.log("Connected to db.."))
-  .catch((e) => console.log("error", e));
 
 // throw new Error("Uncaught error");
 process.on("uncaughtException", (ex) => {
