@@ -1,3 +1,5 @@
+require("express-async-errors");
+
 const userRoute = require("../routes/auth");
 const authRoute = require("../routes/auth");
 const genreRoute = require("../routes/genre");
