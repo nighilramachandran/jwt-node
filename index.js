@@ -1,4 +1,3 @@
-require("winston-mongodb");
 const express = require("express");
 const winston = require("winston");
 
