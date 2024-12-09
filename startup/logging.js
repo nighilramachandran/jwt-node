@@ -20,9 +20,8 @@ module.exports = function () {
   winston.add(new winston.transports.File({ filename: "logs.log" }));
   winston.add(
     new winston.transports.MongoDB({
-      db: "mongodb://localhost:27017/vidly", // MongoDB connection string
+      db: "mongodb://localhost:27017/vidly",
       collection: "log", // Optional: collection name
-      options: { useUnifiedTopology: true }, // Required for modern MongoDB
     })
   );
 };

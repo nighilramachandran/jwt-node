@@ -8,3 +8,23 @@
 {"level":"info","message":"Connected to DB.."}
 {"level":"info","message":"listing on port 3000..."}
 {"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"error","message":"Class constructor Console cannot be invoked without 'new' Class constructor Console cannot be invoked without 'new'","stack":"TypeError: Class constructor Console cannot be invoked without 'new'\n    at /Users/kishore/Desktop/jwt node/startup/db.js:7:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to DB.."}
