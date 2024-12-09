@@ -35,6 +35,13 @@ process.on("uncaughtException", (ex) => {
   winston.error(ex.message, ex);
 });
 
+const p = Promise.reject(new Error("Not handled the rejection"));
+
+process.on("unhandledRejection", (ex) => {
+  console.log("we got an uncaught error");
+  winston.error(ex.message, ex);
+});
+
 winston.add(new winston.transports.File({ filename: "error.log" }));
 winston.add(
   new winston.transports.MongoDB({
