@@ -3,19 +3,10 @@ const winston = require("winston");
 require("winston-mongodb");
 const mongoose = require("mongoose");
 const express = require("express");
-const userRoute = require("./routes/user");
-const authRoute = require("./routes/auth");
-const genreRoute = require("./routes/genre");
 const config = require("config");
-const helmet = require("helmet");
-const morgan = require("morgan");
-const error = require("./middleware/error");
 
 const app = express();
-app.use(express.json());
-app.use(helmet());
-app.use(morgan("tiny"));
-app.use(express.urlencoded({ extended: true }));
+require("./startup/routes")(app);
 
 if (!config.get("jwtPrivateKey")) {
   console.log("FATAL ERROR : Jwt token not defined");
@@ -31,15 +22,20 @@ mongoose
 
 // throw new Error("Uncaught error");
 process.on("uncaughtException", (ex) => {
-  console.log("we got an uncaught error");
   winston.error(ex.message, ex);
+  // 0: success
+  // 1: anything other that 0 failure
+  process.exit(1);
 });
 
-const p = Promise.reject(new Error("Not handled the rejection"));
+// winston.ExceptionHandler(
+//   new winston.transports.File({ filename: "uncaughtExpection.log" })
+// );
 
+// const p = Promise.reject(new Error("Not handled the rejection"));
 process.on("unhandledRejection", (ex) => {
-  console.log("we got an uncaught error");
   winston.error(ex.message, ex);
+  process.exit(1);
 });
 
 winston.add(new winston.transports.File({ filename: "error.log" }));
@@ -50,11 +46,5 @@ winston.add(
     options: { useUnifiedTopology: true }, // Required for modern MongoDB
   })
 );
-
-app.use("/api/users", userRoute);
-app.use("/api/auth", authRoute);
-app.use("/api/course", genreRoute);
-// this should the last one amoung the middleware
-app.use(error);
 
 app.listen(3000, () => console.log("listing on port 3000..."));
