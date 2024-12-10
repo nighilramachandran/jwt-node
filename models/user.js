@@ -36,8 +36,6 @@ userSchema.methods.getAuthenticationToken = function () {
 
 const User = mongoose.model("user", userSchema);
 
-console.log("User", User);
-
 const validateUser = (user) => {
   const schema = {
     name: Joi.string().min(5).max(50).required(),
