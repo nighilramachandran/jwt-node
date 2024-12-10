@@ -1,4 +1,4 @@
-const userRoute = require("../routes/auth");
+const userRoute = require("../routes/user");
 const authRoute = require("../routes/auth");
 const genreRoute = require("../routes/genre");
 const error = require("../middleware/error");
