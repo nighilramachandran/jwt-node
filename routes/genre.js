@@ -1,6 +1,5 @@
 const Joi = require("joi");
 const express = require("express");
-const mongoose = require("mongoose");
 const authToken = require("../middleware/auth");
 const isAdmin = require("../middleware/admin");
 const asyncMiddleware = require("../middleware/async");
