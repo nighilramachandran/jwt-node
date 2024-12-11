@@ -5,6 +5,7 @@ const authToken = require("../middleware/auth");
 const isAdmin = require("../middleware/admin");
 const asyncMiddleware = require("../middleware/async");
 const { Genre } = require("../models/genre");
+const validateObjectId = require("../middleware/validateObjectId");
 
 const router = express.Router();
 
@@ -12,10 +13,12 @@ router.get("/", async (req, res) => {
   const result = await Genre.find();
   res.status(200).send(result);
 });
-router.get("/:id", (req, res) => {
-  // let result = courses.find((c) => c.id === parseInt(req.params.id));
-  // if (!result) res.status(404).send("NO data found");
-  // res.status(200).send(result);
+router.get("/:id", validateObjectId, async (req, res) => {
+  const genre = await Genre.findById(req.params.id);
+  console.log("genre", req.params.id);
+
+  if (!genre) return res.status(404).send("NO data found");
+  res.status(200).send(genre);
 });
 
 router.post("/", authToken, async (req, res) => {

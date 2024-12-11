@@ -1,151 +1,30 @@
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"Connected to DB.."}
+{"level":"error","message":"Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle","metadata":{}}
 {"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
+{"level":"error","message":"Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle","metadata":{}}
 {"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
 {"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
+{"level":"error","message":"Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle","metadata":{}}
 {"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Class constructor Console cannot be invoked without 'new' Class constructor Console cannot be invoked without 'new'","stack":"TypeError: Class constructor Console cannot be invoked without 'new'\n    at /Users/kishore/Desktop/jwt node/startup/db.js:7:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to DB.."}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
+{"level":"error","message":"Converting circular structure to JSON\n    --> starting at object with constructor 'MongoClient'\n    |     property 's' -> object with constructor 'Object'\n    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'\n    --- property 'client' closes the circle","metadata":{}}
 {"level":"info","message":"listing on port 3000..."}
 {"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
 {"level":"info","message":"listing on port 3000..."}
 {"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
 {"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
+{"level":"info","message":"listing on port 3000..."}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
 {"level":"info","message":"listing on port 3000..."}
 {"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
 {"level":"info","message":"listing on port 3000..."}
 {"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
 {"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
 {"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
 {"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"error","message":"Genre is not defined","metadata":{}}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
-{"level":"info","message":"listing on port 3000..."}
-{"level":"info","message":"Connected to mongodb://localhost:27017/vidly_test DB"}
+{"level":"info","message":"Connected to mongodb://localhost:27017/vidly DB"}
