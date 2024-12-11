@@ -4,16 +4,9 @@ const mongoose = require("mongoose");
 const authToken = require("../middleware/auth");
 const isAdmin = require("../middleware/admin");
 const asyncMiddleware = require("../middleware/async");
+const { Genre } = require("../models/genre");
 
 const router = express.Router();
-
-const Genre = mongoose.model(
-  "genre",
-  new mongoose.Schema({
-    item: String,
-    price: Number,
-  })
-);
 
 router.get("/", async (req, res) => {
   const result = await Genre.find();
