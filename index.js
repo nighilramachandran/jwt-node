@@ -7,4 +7,7 @@ require("./startup/logging")();
 require("./startup/routes")(app);
 require("./startup/db")();
 
-app.listen(3000, () => winston.info("listing on port 3000..."));
+const port = process.env.PORT || 3000;
+const server = app.listen(port, () => winston.info("listing on port 3000..."));
+
+module.exports = server;

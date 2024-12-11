@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const winston = require("winston");
-require("winston-mongodb");
+// require("winston-mongodb");
 const config = require("config");
 
 module.exports = function () {
