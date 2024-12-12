@@ -2,7 +2,6 @@ const userRoute = require("../routes/user");
 const authRoute = require("../routes/auth");
 const genreRoute = require("../routes/genre");
 const error = require("../middleware/error");
-const helmet = require("helmet");
 const morgan = require("morgan");
 
 const express = require("express");
