@@ -8,7 +8,7 @@ describe("/api/course", () => {
     server = require("../../index");
   });
   afterEach(async () => {
-    server.close();
+    await server.close();
 
     await Genre.deleteMany({ item: "genre1", price: 5 });
     await Genre.deleteMany({ item: "genre2", price: 40 });
