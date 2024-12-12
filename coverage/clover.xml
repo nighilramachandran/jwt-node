@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733988745587" clover="3.2.0">
-  <project timestamp="1733988745587" name="All files">
+<coverage generated="1733989817867" clover="3.2.0">
+  <project timestamp="1733989817867" name="All files">
     <metrics statements="161" coveredstatements="84" conditionals="26" coveredconditionals="1" methods="21" coveredmethods="4" elements="208" coveredelements="89" complexity="0" loc="161" ncloc="161" packages="5" files="14" classes="14"/>
     <package name="jwt node">
       <metrics statements="11" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
